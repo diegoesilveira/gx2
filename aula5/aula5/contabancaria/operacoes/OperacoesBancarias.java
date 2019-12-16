@@ -19,7 +19,7 @@ public class OperacoesBancarias {
 		Cliente cliente = new Cliente("Diego", "01598906088", contaCorrente);
 		Cliente cliente2 = new Cliente("Victor", "0123066666666", contaPoupanca);
 		Cliente cliente3 = new Cliente("Joao", "0505066666666", contaEspecial);
-		Cliente cliente4 = new Cliente("Joao", "0505066666666", contaEspecial);
+		Cliente cliente4 = new Cliente("Pedro", "1234566666666", contaSalario);
 		
 		cliente.getConta().depositar(500);
 		cliente.getConta().depositar(500);
@@ -49,6 +49,7 @@ public class OperacoesBancarias {
 		Extrato.geraExtrato(cliente);
 		Extrato.geraExtrato(cliente2);
 		Extrato.geraExtrato(cliente3);
+		Extrato.geraExtrato(cliente4);
 
 
 		
