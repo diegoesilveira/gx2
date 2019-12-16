@@ -1,0 +1,8 @@
+Nome: Diego
+Endereco: Rua jose
+CPF: dsds
+Numero INSS: 12232434
+Valor do Serviço: 206.0
+Desconto INSS: 16.48
+Desconto IR: 0.0
+Valor Liquido: 189.52
