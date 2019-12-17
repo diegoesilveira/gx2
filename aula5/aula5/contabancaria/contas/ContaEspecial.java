@@ -1,5 +1,6 @@
 package aula5.contabancaria.contas;
 
+import aula5.contabancaria.clientes.Cliente;
 import aula5.contabancaria.operacoes.Taxa;
 
 public class ContaEspecial extends Conta{
@@ -18,6 +19,9 @@ public class ContaEspecial extends Conta{
 	public void transferir(double valor) {
 		if(valor > getSaldo()) {
 			System.out.println("Saldo insuficiente:");
+		} else {
+			calculaOperacao = ((getSaldo() - valor) - (valor * Taxa.getTaxacontaespecial()));
+			setSaldo(calculaOperacao);
 		}
 	}
 
@@ -31,6 +35,8 @@ public class ContaEspecial extends Conta{
 			
 		}
 	}
+
+	
 	
 	
 

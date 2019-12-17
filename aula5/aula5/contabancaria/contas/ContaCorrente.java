@@ -1,5 +1,6 @@
 package aula5.contabancaria.contas;
 
+import aula5.contabancaria.clientes.Cliente;
 import aula5.contabancaria.operacoes.Taxa;
 
 public class ContaCorrente extends Conta {
@@ -30,9 +31,11 @@ public class ContaCorrente extends Conta {
 		if (valor > getSaldo()) {
 			System.out.println("Não foi possivel realizar a operação, saldo insuficiente: Saldo: " + getSaldo());
 		} else {
-			calculaOperacao = (getSaldo() - valor);
+			calculaOperacao = ((getSaldo() - valor) - (valor * Taxa.getTaxacontacorrente()));
 			setSaldo(calculaOperacao);
 
 		}
 	}
+
+
 }

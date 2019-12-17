@@ -1,13 +1,13 @@
 package aula5.contabancaria.contas;
 
+import aula5.contabancaria.clientes.Cliente;
 import aula5.contabancaria.operacoes.Taxa;
 
 public class ContaPoupanca extends Conta{
 
 	public ContaPoupanca(double tarifa) {
 		super(tarifa);
-		
-		
+			
 	}
 
 	@Override
@@ -31,12 +31,13 @@ public class ContaPoupanca extends Conta{
 		if(valor > getSaldo()) {
 			System.out.println("Não foi possivel realizar a operação, saldo insuficiente: Saldo: " + getSaldo());
 		} else {
-			calculaOperacao = (getSaldo() - valor);
+			calculaOperacao = (getSaldo() - valor) - (valor * Taxa.getTaxacontapoupanca());
 			setSaldo(calculaOperacao);
 			
 		}
 	}
-	
+
+
 	
 
 }

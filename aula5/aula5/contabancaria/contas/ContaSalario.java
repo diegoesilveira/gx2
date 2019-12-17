@@ -1,5 +1,6 @@
 package aula5.contabancaria.contas;
 
+import aula5.contabancaria.clientes.Cliente;
 import aula5.contabancaria.operacoes.Taxa;
 
 public class ContaSalario extends Conta {
@@ -32,4 +33,5 @@ public class ContaSalario extends Conta {
 			
 		}
 	}
+
 }
