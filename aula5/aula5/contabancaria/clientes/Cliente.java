@@ -4,7 +4,7 @@ import java.util.Date;
 
 import aula5.contabancaria.contas.Conta;
 import aula5.projetos.clientes.Cidade;
-import aula5.projetos.clientes.StatusCliente;
+import aula5.projetos.clientes.Status;
 
 public class Cliente {
 

@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 import aula5.projetos.clientes.Cidade;
 import aula5.projetos.clientes.Cliente;
-import aula5.projetos.clientes.StatusCliente;
+import aula5.projetos.clientes.Status;
 import aula5.projetos.planos.Plano;
 import aula5.projetos.planos.internet.PlanoPosInternet;
 import aula5.projetos.planos.internet.PlanoPreInternet;
@@ -57,7 +57,7 @@ public class SolicitaDadosCliente {
 			String telefoneCliente = scanner.nextLine();
 
 			Cliente cliente = new Cliente(nomeCliente, cpfCliente, rgCliente, emailCliente, dataNascimentoFormatada,
-					StatusCliente.valueOf(status), enderecoCliente, new Cidade(cidadeNome), cepCliente,
+					Status.valueOf(status), enderecoCliente, new Cidade(cidadeNome), cepCliente,
 					telefoneCliente);
 
 			Plano planoPreInternet = new PlanoPreInternet(01,"Plano Pre Internet", 29.9, 100, 400);

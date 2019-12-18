@@ -8,7 +8,7 @@ import java.util.Date;
 
 import aula5.projetos.clientes.Cidade;
 import aula5.projetos.clientes.Cliente;
-import aula5.projetos.clientes.StatusCliente;
+import aula5.projetos.clientes.Status;
 import aula5.projetos.planos.Plano;
 import aula5.projetos.planos.internet.PlanoPosInternet;
 
@@ -36,7 +36,7 @@ public class ReciboClienteTxt {
 			saida.write("RG: " + cliente.getRgCliente() + "\n");
 			saida.write("E-mail: " + cliente.getEmail() + "\n");
 			saida.write("Data Nascimento: " + cliente.getDataNascimentoCliente() + "\n");
-			saida.write("Status: " + cliente.getStatus() + "\n");
+			saida.write("Status: " + cliente.getStatus().getDescricao() + "\n");
 			saida.write("Endereço: " + cliente.getEnderecoCliente() + "\n");
 			saida.write("Cidade: " + cliente.getCidade() + "\n");
 			saida.write("CEP: " + cliente.getCepCliente() + "\n");

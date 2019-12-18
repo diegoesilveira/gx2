@@ -12,7 +12,7 @@ public class Cliente {
 	private String rgCliente;
 	private String email;
 	private Date dataNascimentoCliente;
-	private StatusCliente statusCliente;
+	private Status statusCliente;
 	private String enderecoCliente;
 	private Cidade cidade;
 	private String cepCliente;
@@ -23,7 +23,7 @@ public class Cliente {
 	}
 
 	public Cliente(String nomeCliente, String cpfCliente, String rgCliente, String email, Date dataNascimentoCliente,
-			StatusCliente statusCliente, String enderecoCliente, Cidade cidade, String cepCliente, String telefoneCliente) {
+			Status statusCliente, String enderecoCliente, Cidade cidade, String cepCliente, String telefoneCliente) {
 
 		this.nomeCliente = nomeCliente;
 		this.cpfCliente = cpfCliente;
@@ -78,11 +78,11 @@ public class Cliente {
 		this.dataNascimentoCliente = dataNascimentoCliente;
 	}
 
-	public StatusCliente getStatus() {
+	public Status getStatus() {
 		return statusCliente;
 	}
 
-	public void setStatus(StatusCliente statusCliente) {
+	public void setStatus(Status statusCliente) {
 		this.statusCliente = statusCliente;
 	}
 

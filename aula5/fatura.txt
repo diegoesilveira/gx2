@@ -1,0 +1,18 @@
+----------------------------------------Cliente------------------------------------------------------------------------
+Nome: Diego
+CPF: 01545454
+RG: 12343434
+E-mail: diego.silveira@gx2.com.br
+Data Nascimento: Tue Jan 12 00:00:00 BRST 1988
+Status: Ativo
+Endereço: Rua jose huberto bronca
+Cidade: Cidade [descricaoCidade=Porto Alegre]
+CEP: 91120010
+Telefone: 5133445566
+----------------------------------------Planos Ativos:--------------------------------------------------------------- 
+Código do plano: 2
+Descrição do plano: Plano Pos Internet
+Valor do plano: 69.99
+-----------------------------------------------------------------------------------------------------------------------
+----------------------------------------Fatura a pagar:--------------------------------------------------------------- 
+Valor a Pagar: 69.99
