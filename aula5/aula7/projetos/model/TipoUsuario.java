@@ -1,10 +1,10 @@
-package aula7.projetos.model.user;
+package aula7.projetos.model;
 
 import aula5.projetos.clientes.Status;
 
 public enum TipoUsuario {
 	
-	AMINISTRADOR(1, "Administrador"),
+	ADMINISTRADOR(1, "Administrador"),
 	SUPERVISOR(2, "Supervisor"),
 	OPERADOR(3, "Operador");
 

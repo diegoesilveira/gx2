@@ -1,4 +1,4 @@
-package aula7.projetos.model.user;
+package aula7.projetos.model;
 
 public class Usuario {
 	
