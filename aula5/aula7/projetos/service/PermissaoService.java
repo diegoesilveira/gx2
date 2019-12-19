@@ -1,9 +1,8 @@
 package aula7.projetos.service;
 
-import aula7.projetos.model.PermissaoImp;
 import aula7.projetos.model.Usuario;
 
-public class PermissaoService implements PermissaoImp{
+public class PermissaoService {
 
 	public void validaPermissao(Usuario usuarioAutenticado) {
 
@@ -18,6 +17,9 @@ public class PermissaoService implements PermissaoImp{
 		else if(usuarioAutenticado.getTipoUsuario().getDescricao().equals("Operador")) {
 			System.out.println("\n-------------Perfil Operador------------------\n");
 			System.out.println("Sem acesso!");
+		} 
+		else {
+			
 		}
 
 	}
