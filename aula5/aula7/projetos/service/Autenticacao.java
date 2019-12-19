@@ -4,14 +4,15 @@ import aula7.projetos.model.Usuario;
 
 public class Autenticacao {
 		
-		private String usuarioSistema;
-		private String senhaSistema;
+		String usuarioSistema;
+		String senhaSistema;
 		
 		PermissaoService permissaoService = new PermissaoService();
 		
 		public void loginUsuario(String usuarioSistema, String senhaSistema) {
 			this.usuarioSistema = usuarioSistema;
 			this.senhaSistema = senhaSistema;
+			
 		}
 		
 		public void autenticaUsuario(Usuario usuario)  {
