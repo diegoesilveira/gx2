@@ -12,18 +12,21 @@ public class CadastraUsuario {
 	public static void coletaDadosUsuario() {
 				
 		int codigoUsuario = 01;
-		String nomeUsuario = "Diego Silveira";
-		String usuarioLogin ="diegoesilveira";
+		String nomeUsuario = "diegoesilveira";
+		String usuarioSistema ="diegoesilveira";
 		String email = "diegoesilveira@gmail.com";
-		String senha = "absaASDF";
+		String senha = "ab";
+		TipoUsuario tipoUsuario = TipoUsuario.valueOf("OPERADOR");
 		
-		TipoUsuario tipoUsuario = TipoUsuario.valueOf("ADMINISTRADOR");
+		
+		String usuarioLogin = "diegoesilveira";
+		String senhaLogin = "ab";
 							
-		Usuario usuario = new Usuario(codigoUsuario, nomeUsuario, usuarioLogin, email, senha, tipoUsuario);
+		Usuario usuario = new Usuario(codigoUsuario, nomeUsuario, usuarioSistema, email, senha, tipoUsuario);
 		
 		Autenticacao autentica = new Autenticacao();
 		
-		autentica.autenticaUsuario(usuario);
+		autentica.autenticaUsuario(usuario, usuarioLogin, senhaLogin);
 		
 		 
 	}

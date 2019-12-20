@@ -1,25 +1,17 @@
 package aula7.projetos.service;
 
 import aula7.projetos.model.Usuario;
+import aula7.projetos.view.Login;
 
 public class Autenticacao {
-		
-		String usuarioSistema;
-		String senhaSistema;
-		
+	
 		PermissaoService permissaoService = new PermissaoService();
-		
-		public void loginUsuario(String usuarioSistema, String senhaSistema) {
-			this.usuarioSistema = usuarioSistema;
-			this.senhaSistema = senhaSistema;
-			
-		}
-		
-		public void autenticaUsuario(Usuario usuario)  {
-			
-			if(usuario.getUsuario().equals(this.usuarioSistema) | usuario.getEmail().equals(this.usuarioSistema)) {
 				
-				if(usuario.getSenha().equals(this.senhaSistema)) {
+		public void autenticaUsuario(Usuario usuario, String loginUser, String senhaUser)  {
+			
+			if(usuario.getUsuario().equals(loginUser) | usuario.getEmail().equals(loginUser)) {
+				
+				if(usuario.getSenha().equals(senhaUser)) {
 					
 					System.out.println("Usuario autenticado.");
 					System.out.println("Tipo de usuario: " + usuario.getTipoUsuario().getDescricao());
@@ -34,4 +26,7 @@ public class Autenticacao {
 				System.out.println("Erro usuario ou email não confere.");
 			}
 		}
+
+		
+		
 }

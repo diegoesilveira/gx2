@@ -8,7 +8,6 @@ public class Main {
 	public static void main(String[] args) {
 		
 		CadastraUsuario usuario = new CadastraUsuario();
-		Login.loginUsuario();
 		usuario.coletaDadosUsuario();
 	}
 

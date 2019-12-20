@@ -19,6 +19,7 @@ public class PermissaoService {
 			System.out.println("Sem acesso!");
 		} 
 		else {
+			System.out.println("Erro perfil não encontrado.");
 			
 		}
 
